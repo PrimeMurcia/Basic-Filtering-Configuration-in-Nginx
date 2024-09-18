@@ -18,8 +18,7 @@ sudo nano /etc/nginx/security.conf
 
 Copy and paste the following configuration into security.conf. This file includes rules to block several types of malicious requests:
 
-SQL Injection (SQLi)
-Cross-Site Scripting (XSS)
+# *Cross-Site Scripting (XSS)
 Remote Code Execution (RCE)
 XML External Entity (XXE) Attacks
 Insecure HTTP Methods
