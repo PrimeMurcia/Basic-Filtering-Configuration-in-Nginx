@@ -12,8 +12,10 @@ To begin, create a new file named `security.conf` in the Nginx configuration dir
 
 ```bash
 sudo nano /etc/nginx/security.conf
+```
 
-2. Add the Configuration
+### 2. Add the Configuration
+
 Copy and paste the following configuration into security.conf. This file includes rules to block several types of malicious requests:
 
 SQL Injection (SQLi)
@@ -22,7 +24,8 @@ Remote Code Execution (RCE)
 XML External Entity (XXE) Attacks
 Insecure HTTP Methods
 Deserialization Attacks
-3. Include security.conf in Nginx
+
+### 3. Include security.conf in Nginx
 To activate the configuration, add the following line to your nginx.conf or in a specific site configuration file located in /etc/nginx/sites-available/:
 
 nginx
