@@ -213,3 +213,18 @@ if ($block_deserialization = 1) {
 # Update components regularly and scan for vulnerabilities.
 
 ```
+
+### 3. Add the Configuration
+
+Edit your main Nginx configuration file or your site-specific configuration file in sites-available. Add an include directive to include the new file
+
+```
+server {
+    listen 80;
+    server_name example.com;
+
+    include /etc/nginx/security.conf;  # Include the security configuration
+
+     #   nginx config......
+
+```
